@@ -1,11 +1,10 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Wall-0001.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Background.png" type="Texture" id=3]
 [ext_resource path="res://Scenes/Block.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/LightBlock.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Scenes/Ball.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scripts/Main.gd" type="Script" id=7]
 [ext_resource path="res://Scenes/DamageArea.tscn" type="PackedScene" id=8]
 
@@ -118,7 +117,6 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
 [node name="World" type="Node2D"]
 script = ExtResource( 7 )
-ball_scene = ExtResource( 6 )
 
 [node name="Background" type="TextureRect" parent="."]
 margin_right = 320.0
@@ -1104,6 +1102,16 @@ position = Vector2( 13, 111 )
 [node name="DamageArea" parent="Bottom" instance=ExtResource( 8 )]
 position = Vector2( 160, 182 )
 scale = Vector2( 17.12, 1 )
+
+[node name="BlackScreen" type="TextureRect" parent="."]
+visible = false
+margin_right = 328.0
+margin_bottom = 190.0
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [connection signal="game_over" from="Player" to="." method="_on_Player_game_over"]
 [connection signal="body_entered" from="Bottom/DamageArea" to="." method="_on_DamageArea_body_entered"]
