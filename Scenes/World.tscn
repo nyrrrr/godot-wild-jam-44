@@ -1,10 +1,11 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Wall-0001.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Background.png" type="Texture" id=3]
 [ext_resource path="res://Scenes/Block.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/LightBlock.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Assets/Early GameBoy.ttf" type="DynamicFontData" id=6]
 [ext_resource path="res://Scripts/Main.gd" type="Script" id=7]
 [ext_resource path="res://Scenes/DamageArea.tscn" type="PackedScene" id=8]
 
@@ -115,6 +116,13 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 0/z_index = 0
 
+[sub_resource type="DynamicFont" id=18]
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=19]
+size = 32
+font_data = ExtResource( 6 )
+
 [node name="World" type="Node2D"]
 script = ExtResource( 7 )
 
@@ -142,7 +150,10 @@ position = Vector2( 160, 170 )
 [node name="Top" type="YSort" parent="."]
 
 [node name="YSort" type="YSort" parent="Top"]
-position = Vector2( -3, 0 )
+position = Vector2( -3, 55 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="YSort" type="YSort" parent="Top/YSort"]
 
@@ -515,7 +526,10 @@ position = Vector2( 16, 50 )
 position = Vector2( 16, 56 )
 
 [node name="YSort6" type="YSort" parent="Top"]
-position = Vector2( 257, 0 )
+position = Vector2( 257, 55 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="YSort" type="YSort" parent="Top/YSort6"]
 
@@ -606,9 +620,108 @@ position = Vector2( 16, 50 )
 [node name="Block9" parent="Top/YSort6/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
+[node name="YSort7" type="YSort" parent="Top"]
+position = Vector2( 205, 55 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="YSort" type="YSort" parent="Top/YSort7"]
+
+[node name="Block" parent="Top/YSort7/YSort" instance=ExtResource( 4 )]
+position = Vector2( 16, 8 )
+
+[node name="Block2" parent="Top/YSort7/YSort" instance=ExtResource( 4 )]
+position = Vector2( 16, 14 )
+
+[node name="Block3" parent="Top/YSort7/YSort" instance=ExtResource( 4 )]
+position = Vector2( 16, 38 )
+
+[node name="Block4" parent="Top/YSort7/YSort" instance=ExtResource( 4 )]
+position = Vector2( 16, 32 )
+
+[node name="Block5" parent="Top/YSort7/YSort" instance=ExtResource( 4 )]
+position = Vector2( 16, 26 )
+
+[node name="Block6" parent="Top/YSort7/YSort" instance=ExtResource( 4 )]
+position = Vector2( 16, 20 )
+
+[node name="Block7" parent="Top/YSort7/YSort" instance=ExtResource( 4 )]
+position = Vector2( 16, 44 )
+
+[node name="Block8" parent="Top/YSort7/YSort" instance=ExtResource( 4 )]
+position = Vector2( 16, 50 )
+
+[node name="Block9" parent="Top/YSort7/YSort" instance=ExtResource( 4 )]
+position = Vector2( 16, 56 )
+
+[node name="YSort2" type="YSort" parent="Top/YSort7"]
+position = Vector2( 17, 0 )
+
+[node name="Block" parent="Top/YSort7/YSort2" instance=ExtResource( 4 )]
+position = Vector2( 16, 8 )
+
+[node name="Block2" parent="Top/YSort7/YSort2" instance=ExtResource( 4 )]
+position = Vector2( 16, 14 )
+
+[node name="Block3" parent="Top/YSort7/YSort2" instance=ExtResource( 4 )]
+position = Vector2( 16, 38 )
+
+[node name="Block4" parent="Top/YSort7/YSort2" instance=ExtResource( 4 )]
+position = Vector2( 16, 32 )
+
+[node name="Block5" parent="Top/YSort7/YSort2" instance=ExtResource( 4 )]
+position = Vector2( 16, 26 )
+
+[node name="Block6" parent="Top/YSort7/YSort2" instance=ExtResource( 4 )]
+position = Vector2( 16, 20 )
+
+[node name="Block7" parent="Top/YSort7/YSort2" instance=ExtResource( 4 )]
+position = Vector2( 16, 44 )
+
+[node name="Block8" parent="Top/YSort7/YSort2" instance=ExtResource( 4 )]
+position = Vector2( 16, 50 )
+
+[node name="Block9" parent="Top/YSort7/YSort2" instance=ExtResource( 4 )]
+position = Vector2( 16, 56 )
+
+[node name="YSort3" type="YSort" parent="Top/YSort7"]
+position = Vector2( 34, 0 )
+
+[node name="Block" parent="Top/YSort7/YSort3" instance=ExtResource( 4 )]
+position = Vector2( 16, 8 )
+
+[node name="Block2" parent="Top/YSort7/YSort3" instance=ExtResource( 4 )]
+position = Vector2( 16, 14 )
+
+[node name="Block3" parent="Top/YSort7/YSort3" instance=ExtResource( 4 )]
+position = Vector2( 16, 38 )
+
+[node name="Block4" parent="Top/YSort7/YSort3" instance=ExtResource( 4 )]
+position = Vector2( 16, 32 )
+
+[node name="Block5" parent="Top/YSort7/YSort3" instance=ExtResource( 4 )]
+position = Vector2( 16, 26 )
+
+[node name="Block6" parent="Top/YSort7/YSort3" instance=ExtResource( 4 )]
+position = Vector2( 16, 20 )
+
+[node name="Block7" parent="Top/YSort7/YSort3" instance=ExtResource( 4 )]
+position = Vector2( 16, 44 )
+
+[node name="Block8" parent="Top/YSort7/YSort3" instance=ExtResource( 4 )]
+position = Vector2( 16, 50 )
+
+[node name="Block9" parent="Top/YSort7/YSort3" instance=ExtResource( 4 )]
+position = Vector2( 16, 56 )
+
 [node name="Bottom" type="YSort" parent="."]
 
 [node name="YSort" type="YSort" parent="Bottom"]
+position = Vector2( 0, -55 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="YSort" type="YSort" parent="Bottom/YSort"]
 
@@ -915,100 +1028,11 @@ position = Vector2( 13, 99 )
 [node name="LightBlock8" parent="Bottom/YSort4/YSort3" instance=ExtResource( 5 )]
 position = Vector2( 13, 105 )
 
-[node name="YSort5" type="YSort" parent="Bottom"]
-position = Vector2( 208, 0 )
-
-[node name="YSort" type="YSort" parent="Bottom/YSort5"]
-
-[node name="LightBlock" parent="Bottom/YSort5/YSort" instance=ExtResource( 5 )]
-position = Vector2( 13, 63 )
-
-[node name="LightBlock2" parent="Bottom/YSort5/YSort" instance=ExtResource( 5 )]
-position = Vector2( 13, 69 )
-
-[node name="LightBlock3" parent="Bottom/YSort5/YSort" instance=ExtResource( 5 )]
-position = Vector2( 13, 75 )
-
-[node name="LightBlock4" parent="Bottom/YSort5/YSort" instance=ExtResource( 5 )]
-position = Vector2( 13, 81 )
-
-[node name="LightBlock5" parent="Bottom/YSort5/YSort" instance=ExtResource( 5 )]
-position = Vector2( 13, 87 )
-
-[node name="LightBlock6" parent="Bottom/YSort5/YSort" instance=ExtResource( 5 )]
-position = Vector2( 13, 93 )
-
-[node name="LightBlock7" parent="Bottom/YSort5/YSort" instance=ExtResource( 5 )]
-position = Vector2( 13, 99 )
-
-[node name="LightBlock8" parent="Bottom/YSort5/YSort" instance=ExtResource( 5 )]
-position = Vector2( 13, 105 )
-
-[node name="LightBlock9" parent="Bottom/YSort5/YSort" instance=ExtResource( 5 )]
-position = Vector2( 13, 111 )
-
-[node name="YSort2" type="YSort" parent="Bottom/YSort5"]
-position = Vector2( 17, 0 )
-
-[node name="LightBlock" parent="Bottom/YSort5/YSort2" instance=ExtResource( 5 )]
-position = Vector2( 13, 63 )
-
-[node name="LightBlock2" parent="Bottom/YSort5/YSort2" instance=ExtResource( 5 )]
-position = Vector2( 13, 69 )
-
-[node name="LightBlock3" parent="Bottom/YSort5/YSort2" instance=ExtResource( 5 )]
-position = Vector2( 13, 75 )
-
-[node name="LightBlock4" parent="Bottom/YSort5/YSort2" instance=ExtResource( 5 )]
-position = Vector2( 13, 81 )
-
-[node name="LightBlock5" parent="Bottom/YSort5/YSort2" instance=ExtResource( 5 )]
-position = Vector2( 13, 87 )
-
-[node name="LightBlock6" parent="Bottom/YSort5/YSort2" instance=ExtResource( 5 )]
-position = Vector2( 13, 93 )
-
-[node name="LightBlock7" parent="Bottom/YSort5/YSort2" instance=ExtResource( 5 )]
-position = Vector2( 13, 99 )
-
-[node name="LightBlock8" parent="Bottom/YSort5/YSort2" instance=ExtResource( 5 )]
-position = Vector2( 13, 105 )
-
-[node name="LightBlock9" parent="Bottom/YSort5/YSort2" instance=ExtResource( 5 )]
-position = Vector2( 13, 111 )
-
-[node name="YSort3" type="YSort" parent="Bottom/YSort5"]
-position = Vector2( 34, 0 )
-
-[node name="LightBlock" parent="Bottom/YSort5/YSort3" instance=ExtResource( 5 )]
-position = Vector2( 13, 63 )
-
-[node name="LightBlock2" parent="Bottom/YSort5/YSort3" instance=ExtResource( 5 )]
-position = Vector2( 13, 69 )
-
-[node name="LightBlock3" parent="Bottom/YSort5/YSort3" instance=ExtResource( 5 )]
-position = Vector2( 13, 75 )
-
-[node name="LightBlock4" parent="Bottom/YSort5/YSort3" instance=ExtResource( 5 )]
-position = Vector2( 13, 81 )
-
-[node name="LightBlock5" parent="Bottom/YSort5/YSort3" instance=ExtResource( 5 )]
-position = Vector2( 13, 87 )
-
-[node name="LightBlock6" parent="Bottom/YSort5/YSort3" instance=ExtResource( 5 )]
-position = Vector2( 13, 93 )
-
-[node name="LightBlock7" parent="Bottom/YSort5/YSort3" instance=ExtResource( 5 )]
-position = Vector2( 13, 99 )
-
-[node name="LightBlock8" parent="Bottom/YSort5/YSort3" instance=ExtResource( 5 )]
-position = Vector2( 13, 105 )
-
-[node name="LightBlock9" parent="Bottom/YSort5/YSort3" instance=ExtResource( 5 )]
-position = Vector2( 13, 111 )
-
 [node name="YSort6" type="YSort" parent="Bottom"]
-position = Vector2( 260, 0 )
+position = Vector2( 260, -55 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="YSort" type="YSort" parent="Bottom/YSort6"]
 
@@ -1099,10 +1123,6 @@ position = Vector2( 13, 105 )
 [node name="LightBlock9" parent="Bottom/YSort6/YSort3" instance=ExtResource( 5 )]
 position = Vector2( 13, 111 )
 
-[node name="DamageArea" parent="Bottom" instance=ExtResource( 8 )]
-position = Vector2( 160, 182 )
-scale = Vector2( 17.12, 1 )
-
 [node name="BlackScreen" type="TextureRect" parent="."]
 visible = false
 margin_right = 328.0
@@ -1113,5 +1133,50 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="DamageArea" parent="." instance=ExtResource( 8 )]
+position = Vector2( 160, 182 )
+scale = Vector2( 17.12, 1 )
+
+[node name="StartLabel" type="Label" parent="."]
+margin_left = 12.0
+margin_top = 128.0
+margin_right = 308.0
+margin_bottom = 148.0
+custom_colors/font_color = Color( 0.0588235, 0.219608, 0.0588235, 1 )
+custom_fonts/font = SubResource( 18 )
+text = "Press space to start"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GameOverLabel" type="Label" parent="."]
+visible = false
+margin_left = 16.0
+margin_top = 52.0
+margin_right = 304.0
+margin_bottom = 111.0
+custom_colors/font_color = Color( 0.0588235, 0.219608, 0.0588235, 1 )
+custom_fonts/font = SubResource( 19 )
+text = "GAME OVER"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WonLabel" type="Label" parent="."]
+visible = false
+margin_left = 16.0
+margin_top = 22.0
+margin_right = 304.0
+margin_bottom = 148.0
+custom_colors/font_color = Color( 0.0588235, 0.219608, 0.0588235, 1 )
+custom_fonts/font = SubResource( 19 )
+text = "Male Ego Shattered"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [connection signal="game_over" from="Player" to="." method="_on_Player_game_over"]
-[connection signal="body_entered" from="Bottom/DamageArea" to="." method="_on_DamageArea_body_entered"]
+[connection signal="body_entered" from="DamageArea" to="." method="_on_DamageArea_body_entered"]

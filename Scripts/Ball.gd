@@ -14,9 +14,9 @@ func _ready():
 	speed = speed + (275 - get_tree().get_nodes_in_group("Blocks").size()) * 0.25
 
 func _physics_process(delta):
-	print(speed)
 	var collision = move_and_collide(velocity.normalized() * speed * delta)
 	if collision:
+		$AudioStreamPlayer2D.play()
 		velocity = velocity.bounce(collision.normal)
 		if collision.collider is Block:
 			speed += 0.25
