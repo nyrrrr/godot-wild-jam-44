@@ -41,8 +41,13 @@ func _on_Player_game_over():
 
 func _on_check_game_status():
 	var blocks = get_tree().get_nodes_in_group("Blocks").size()
-	if blocks == 0:
-		end_game()
+	match blocks:
+		200:
+			$Music.pitch_scale = 1.08
+		100:
+			$Music.pitch_scale = 1.17
+		0:
+			end_game()
 
 func end_game():
 	ball.velocity = Vector2.ZERO
