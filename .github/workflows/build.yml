@@ -2,7 +2,7 @@ name: Build + Publish Game
 
 on:
   push:
-    branches: master
+    branches: main
 
 jobs:
   build:
