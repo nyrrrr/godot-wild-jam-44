@@ -8,6 +8,22 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "KinematicBody2D",
+"class": "Ball",
+"language": "GDScript",
+"path": "res://Scripts/Ball.gd"
+}, {
+"base": "StaticBody2D",
+"class": "Block",
+"language": "GDScript",
+"path": "res://Scripts/Block.gd"
+} ]
+_global_script_class_icons={
+"Ball": "",
+"Block": ""
+}
+
 [application]
 
 config/name="Godot-wild-jam- 44"
