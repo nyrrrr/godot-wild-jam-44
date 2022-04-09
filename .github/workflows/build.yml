@@ -1,0 +1,45 @@
+name: Build + Publish Game
+
+on:
+  push:
+    branches: main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        platform:
+          - name: "windows"
+            output: "BreakingPoint.exe"
+          - name: "linux"
+            output: "BreakingPoint.x86_64"
+          - name: "mac"
+            output: "BreakingPoint.zip"
+          - name: "web"
+            output: "index.html"
+    container:
+      image: barichello/godot-ci:3.4.2
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          lfs: true
+      - name: Setup
+        run: |
+          mkdir -v -p ~/.local/share/godot/templates
+          mv /root/.local/share/godot/templates/${GODOT_VERSION}.stable ~/.local/share/godot/templates/${GODOT_VERSION}.stable
+        env:
+          GODOT_VERSION: 3.4.2
+      - name: Build
+        run: |
+          mkdir -v -p build/${{ matrix.platform.name }}
+          godot -v --export ${{ matrix.platform.name}}  ./build/${{ matrix.platform.name }}/${{ matrix.platform.output }}
+      - name: Deploy to Itch
+        uses: josephbmanley/butler-publish-itchio-action@master
+        env:
+          BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
+          CHANNEL: ${{ matrix.platform.name }}
+          ITCH_GAME: breaking-point
+          ITCH_USER: pandoriafalls
+          PACKAGE: build/${{ matrix.platform.name }}
