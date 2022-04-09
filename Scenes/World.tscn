@@ -167,33 +167,6 @@ position = Vector2( 16, 50 )
 [node name="Block9" parent="M/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
-[node name="Block10" parent="M/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 62 )
-
-[node name="Block11" parent="M/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 68 )
-
-[node name="Block12" parent="M/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 92 )
-
-[node name="Block13" parent="M/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 86 )
-
-[node name="Block14" parent="M/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 80 )
-
-[node name="Block15" parent="M/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 74 )
-
-[node name="Block16" parent="M/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 98 )
-
-[node name="Block17" parent="M/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 104 )
-
-[node name="Block18" parent="M/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 110 )
-
 [node name="YSort2" type="YSort" parent="M"]
 position = Vector2( 17, 0 )
 
@@ -224,33 +197,6 @@ position = Vector2( 16, 50 )
 [node name="Block9" parent="M/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
-[node name="Block10" parent="M/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 62 )
-
-[node name="Block11" parent="M/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 68 )
-
-[node name="Block12" parent="M/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 92 )
-
-[node name="Block13" parent="M/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 86 )
-
-[node name="Block14" parent="M/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 80 )
-
-[node name="Block15" parent="M/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 74 )
-
-[node name="Block16" parent="M/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 98 )
-
-[node name="Block17" parent="M/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 104 )
-
-[node name="Block18" parent="M/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 110 )
-
 [node name="YSort3" type="YSort" parent="M"]
 position = Vector2( 34, 0 )
 
@@ -280,33 +226,6 @@ position = Vector2( 16, 50 )
 
 [node name="Block9" parent="M/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
-
-[node name="Block10" parent="M/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 62 )
-
-[node name="Block11" parent="M/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 68 )
-
-[node name="Block12" parent="M/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 92 )
-
-[node name="Block13" parent="M/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 86 )
-
-[node name="Block14" parent="M/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 80 )
-
-[node name="Block15" parent="M/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 74 )
-
-[node name="Block16" parent="M/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 98 )
-
-[node name="Block17" parent="M/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 104 )
-
-[node name="Block18" parent="M/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 110 )
 
 [node name="A" type="YSort" parent="."]
 position = Vector2( 49, 0 )
@@ -340,33 +259,6 @@ position = Vector2( 16, 50 )
 [node name="Block9" parent="A/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
-[node name="Block10" parent="A/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 62 )
-
-[node name="Block11" parent="A/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 68 )
-
-[node name="Block12" parent="A/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 92 )
-
-[node name="Block13" parent="A/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 86 )
-
-[node name="Block14" parent="A/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 80 )
-
-[node name="Block15" parent="A/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 74 )
-
-[node name="Block16" parent="A/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 98 )
-
-[node name="Block17" parent="A/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 104 )
-
-[node name="Block18" parent="A/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 110 )
-
 [node name="YSort2" type="YSort" parent="A"]
 position = Vector2( 17, 0 )
 
@@ -397,33 +289,6 @@ position = Vector2( 16, 50 )
 [node name="Block9" parent="A/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
-[node name="Block10" parent="A/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 62 )
-
-[node name="Block11" parent="A/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 68 )
-
-[node name="Block12" parent="A/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 92 )
-
-[node name="Block13" parent="A/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 86 )
-
-[node name="Block14" parent="A/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 80 )
-
-[node name="Block15" parent="A/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 74 )
-
-[node name="Block16" parent="A/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 98 )
-
-[node name="Block17" parent="A/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 104 )
-
-[node name="Block18" parent="A/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 110 )
-
 [node name="YSort3" type="YSort" parent="A"]
 position = Vector2( 34, 0 )
 
@@ -453,33 +318,6 @@ position = Vector2( 16, 50 )
 
 [node name="Block9" parent="A/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
-
-[node name="Block10" parent="A/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 62 )
-
-[node name="Block11" parent="A/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 68 )
-
-[node name="Block12" parent="A/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 92 )
-
-[node name="Block13" parent="A/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 86 )
-
-[node name="Block14" parent="A/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 80 )
-
-[node name="Block15" parent="A/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 74 )
-
-[node name="Block16" parent="A/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 98 )
-
-[node name="Block17" parent="A/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 104 )
-
-[node name="Block18" parent="A/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 110 )
 
 [node name="L" type="YSort" parent="."]
 position = Vector2( 101, 0 )
@@ -513,33 +351,6 @@ position = Vector2( 16, 50 )
 [node name="Block9" parent="L/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
-[node name="Block10" parent="L/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 62 )
-
-[node name="Block11" parent="L/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 68 )
-
-[node name="Block12" parent="L/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 92 )
-
-[node name="Block13" parent="L/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 86 )
-
-[node name="Block14" parent="L/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 80 )
-
-[node name="Block15" parent="L/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 74 )
-
-[node name="Block16" parent="L/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 98 )
-
-[node name="Block17" parent="L/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 104 )
-
-[node name="Block18" parent="L/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 110 )
-
 [node name="YSort2" type="YSort" parent="L"]
 position = Vector2( 17, 0 )
 
@@ -570,33 +381,6 @@ position = Vector2( 16, 50 )
 [node name="Block9" parent="L/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
-[node name="Block10" parent="L/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 62 )
-
-[node name="Block11" parent="L/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 68 )
-
-[node name="Block12" parent="L/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 92 )
-
-[node name="Block13" parent="L/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 86 )
-
-[node name="Block14" parent="L/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 80 )
-
-[node name="Block15" parent="L/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 74 )
-
-[node name="Block16" parent="L/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 98 )
-
-[node name="Block17" parent="L/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 104 )
-
-[node name="Block18" parent="L/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 110 )
-
 [node name="YSort3" type="YSort" parent="L"]
 position = Vector2( 34, 0 )
 
@@ -626,33 +410,6 @@ position = Vector2( 16, 50 )
 
 [node name="Block9" parent="L/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
-
-[node name="Block10" parent="L/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 62 )
-
-[node name="Block11" parent="L/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 68 )
-
-[node name="Block12" parent="L/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 92 )
-
-[node name="Block13" parent="L/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 86 )
-
-[node name="Block14" parent="L/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 80 )
-
-[node name="Block15" parent="L/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 74 )
-
-[node name="Block16" parent="L/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 98 )
-
-[node name="Block17" parent="L/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 104 )
-
-[node name="Block18" parent="L/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 110 )
 
 [node name="E" type="YSort" parent="."]
 position = Vector2( 153, 0 )
@@ -686,33 +443,6 @@ position = Vector2( 16, 50 )
 [node name="Block9" parent="E/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
-[node name="Block10" parent="E/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 62 )
-
-[node name="Block11" parent="E/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 68 )
-
-[node name="Block12" parent="E/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 92 )
-
-[node name="Block13" parent="E/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 86 )
-
-[node name="Block14" parent="E/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 80 )
-
-[node name="Block15" parent="E/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 74 )
-
-[node name="Block16" parent="E/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 98 )
-
-[node name="Block17" parent="E/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 104 )
-
-[node name="Block18" parent="E/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 110 )
-
 [node name="YSort2" type="YSort" parent="E"]
 position = Vector2( 17, 0 )
 
@@ -743,33 +473,6 @@ position = Vector2( 16, 50 )
 [node name="Block9" parent="E/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
-[node name="Block10" parent="E/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 62 )
-
-[node name="Block11" parent="E/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 68 )
-
-[node name="Block12" parent="E/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 92 )
-
-[node name="Block13" parent="E/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 86 )
-
-[node name="Block14" parent="E/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 80 )
-
-[node name="Block15" parent="E/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 74 )
-
-[node name="Block16" parent="E/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 98 )
-
-[node name="Block17" parent="E/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 104 )
-
-[node name="Block18" parent="E/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 110 )
-
 [node name="YSort3" type="YSort" parent="E"]
 position = Vector2( 34, 0 )
 
@@ -799,33 +502,6 @@ position = Vector2( 16, 50 )
 
 [node name="Block9" parent="E/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
-
-[node name="Block10" parent="E/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 62 )
-
-[node name="Block11" parent="E/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 68 )
-
-[node name="Block12" parent="E/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 92 )
-
-[node name="Block13" parent="E/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 86 )
-
-[node name="Block14" parent="E/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 80 )
-
-[node name="Block15" parent="E/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 74 )
-
-[node name="Block16" parent="E/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 98 )
-
-[node name="Block17" parent="E/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 104 )
-
-[node name="Block18" parent="E/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 110 )
 
 [node name="E2" type="YSort" parent="."]
 position = Vector2( 205, 0 )
@@ -859,33 +535,6 @@ position = Vector2( 16, 50 )
 [node name="Block9" parent="E2/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
-[node name="Block10" parent="E2/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 62 )
-
-[node name="Block11" parent="E2/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 68 )
-
-[node name="Block12" parent="E2/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 92 )
-
-[node name="Block13" parent="E2/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 86 )
-
-[node name="Block14" parent="E2/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 80 )
-
-[node name="Block15" parent="E2/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 74 )
-
-[node name="Block16" parent="E2/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 98 )
-
-[node name="Block17" parent="E2/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 104 )
-
-[node name="Block18" parent="E2/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 110 )
-
 [node name="YSort2" type="YSort" parent="E2"]
 position = Vector2( 17, 0 )
 
@@ -916,33 +565,6 @@ position = Vector2( 16, 50 )
 [node name="Block9" parent="E2/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
-[node name="Block10" parent="E2/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 62 )
-
-[node name="Block11" parent="E2/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 68 )
-
-[node name="Block12" parent="E2/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 92 )
-
-[node name="Block13" parent="E2/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 86 )
-
-[node name="Block14" parent="E2/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 80 )
-
-[node name="Block15" parent="E2/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 74 )
-
-[node name="Block16" parent="E2/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 98 )
-
-[node name="Block17" parent="E2/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 104 )
-
-[node name="Block18" parent="E2/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 110 )
-
 [node name="YSort3" type="YSort" parent="E2"]
 position = Vector2( 34, 0 )
 
@@ -972,33 +594,6 @@ position = Vector2( 16, 50 )
 
 [node name="Block9" parent="E2/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
-
-[node name="Block10" parent="E2/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 62 )
-
-[node name="Block11" parent="E2/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 68 )
-
-[node name="Block12" parent="E2/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 92 )
-
-[node name="Block13" parent="E2/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 86 )
-
-[node name="Block14" parent="E2/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 80 )
-
-[node name="Block15" parent="E2/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 74 )
-
-[node name="Block16" parent="E2/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 98 )
-
-[node name="Block17" parent="E2/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 104 )
-
-[node name="Block18" parent="E2/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 110 )
 
 [node name="A2" type="YSort" parent="."]
 position = Vector2( 257, 0 )
@@ -1032,33 +627,6 @@ position = Vector2( 16, 50 )
 [node name="Block9" parent="A2/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
-[node name="Block10" parent="A2/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 62 )
-
-[node name="Block11" parent="A2/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 68 )
-
-[node name="Block12" parent="A2/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 92 )
-
-[node name="Block13" parent="A2/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 86 )
-
-[node name="Block14" parent="A2/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 80 )
-
-[node name="Block15" parent="A2/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 74 )
-
-[node name="Block16" parent="A2/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 98 )
-
-[node name="Block17" parent="A2/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 104 )
-
-[node name="Block18" parent="A2/YSort" instance=ExtResource( 4 )]
-position = Vector2( 16, 110 )
-
 [node name="YSort2" type="YSort" parent="A2"]
 position = Vector2( 17, 0 )
 
@@ -1089,33 +657,6 @@ position = Vector2( 16, 50 )
 [node name="Block9" parent="A2/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
-[node name="Block10" parent="A2/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 62 )
-
-[node name="Block11" parent="A2/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 68 )
-
-[node name="Block12" parent="A2/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 92 )
-
-[node name="Block13" parent="A2/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 86 )
-
-[node name="Block14" parent="A2/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 80 )
-
-[node name="Block15" parent="A2/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 74 )
-
-[node name="Block16" parent="A2/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 98 )
-
-[node name="Block17" parent="A2/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 104 )
-
-[node name="Block18" parent="A2/YSort2" instance=ExtResource( 4 )]
-position = Vector2( 16, 110 )
-
 [node name="YSort3" type="YSort" parent="A2"]
 position = Vector2( 34, 0 )
 
@@ -1145,30 +686,3 @@ position = Vector2( 16, 50 )
 
 [node name="Block9" parent="A2/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
-
-[node name="Block10" parent="A2/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 62 )
-
-[node name="Block11" parent="A2/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 68 )
-
-[node name="Block12" parent="A2/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 92 )
-
-[node name="Block13" parent="A2/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 86 )
-
-[node name="Block14" parent="A2/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 80 )
-
-[node name="Block15" parent="A2/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 74 )
-
-[node name="Block16" parent="A2/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 98 )
-
-[node name="Block17" parent="A2/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 104 )
-
-[node name="Block18" parent="A2/YSort3" instance=ExtResource( 4 )]
-position = Vector2( 16, 110 )

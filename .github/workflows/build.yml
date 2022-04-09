@@ -2,7 +2,7 @@ name: Build + Publish Game
 
 on:
   push:
-    branches: main
+    branches: master
 
 jobs:
   build:
@@ -10,12 +10,6 @@ jobs:
     strategy:
       matrix:
         platform:
-          - name: "windows"
-            output: "BreakingPoint.exe"
-          - name: "linux"
-            output: "BreakingPoint.x86_64"
-          - name: "mac"
-            output: "BreakingPoint.zip"
           - name: "web"
             output: "index.html"
     container:
@@ -40,6 +34,6 @@ jobs:
         env:
           BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
           CHANNEL: ${{ matrix.platform.name }}
-          ITCH_GAME: breaking-point
+          ITCH_GAME: male-ego
           ITCH_USER: pandoriafalls
           PACKAGE: build/${{ matrix.platform.name }}
