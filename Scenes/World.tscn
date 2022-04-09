@@ -1,9 +1,10 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Wall-0001.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Background.png" type="Texture" id=3]
 [ext_resource path="res://Scenes/Block.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/LightBlock.tscn" type="PackedScene" id=5]
 
 [sub_resource type="ConvexPolygonShape2D" id=9]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -135,554 +136,1124 @@ tile_data = PoolIntArray( -131075, 0, 0, -196608, 0, 0, -196605, 0, 0, -196604, 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 160, 170 )
 
-[node name="M" type="YSort" parent="."]
+[node name="Top" type="YSort" parent="."]
+
+[node name="YSort" type="YSort" parent="Top"]
 position = Vector2( -3, 0 )
 
-[node name="YSort" type="YSort" parent="M"]
+[node name="YSort" type="YSort" parent="Top/YSort"]
 
-[node name="Block" parent="M/YSort" instance=ExtResource( 4 )]
+[node name="Block" parent="Top/YSort/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 8 )
 
-[node name="Block2" parent="M/YSort" instance=ExtResource( 4 )]
+[node name="Block2" parent="Top/YSort/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 14 )
 
-[node name="Block3" parent="M/YSort" instance=ExtResource( 4 )]
+[node name="Block3" parent="Top/YSort/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 38 )
 
-[node name="Block4" parent="M/YSort" instance=ExtResource( 4 )]
+[node name="Block4" parent="Top/YSort/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 32 )
 
-[node name="Block5" parent="M/YSort" instance=ExtResource( 4 )]
+[node name="Block5" parent="Top/YSort/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 26 )
 
-[node name="Block6" parent="M/YSort" instance=ExtResource( 4 )]
+[node name="Block6" parent="Top/YSort/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 20 )
 
-[node name="Block7" parent="M/YSort" instance=ExtResource( 4 )]
+[node name="Block7" parent="Top/YSort/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 44 )
 
-[node name="Block8" parent="M/YSort" instance=ExtResource( 4 )]
+[node name="Block8" parent="Top/YSort/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 50 )
 
-[node name="Block9" parent="M/YSort" instance=ExtResource( 4 )]
+[node name="Block9" parent="Top/YSort/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
-[node name="YSort2" type="YSort" parent="M"]
+[node name="YSort2" type="YSort" parent="Top/YSort"]
 position = Vector2( 17, 0 )
 
-[node name="Block" parent="M/YSort2" instance=ExtResource( 4 )]
+[node name="Block" parent="Top/YSort/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 8 )
 
-[node name="Block2" parent="M/YSort2" instance=ExtResource( 4 )]
+[node name="Block2" parent="Top/YSort/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 14 )
 
-[node name="Block3" parent="M/YSort2" instance=ExtResource( 4 )]
+[node name="Block3" parent="Top/YSort/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 38 )
 
-[node name="Block4" parent="M/YSort2" instance=ExtResource( 4 )]
+[node name="Block4" parent="Top/YSort/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 32 )
 
-[node name="Block5" parent="M/YSort2" instance=ExtResource( 4 )]
+[node name="Block5" parent="Top/YSort/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 26 )
 
-[node name="Block6" parent="M/YSort2" instance=ExtResource( 4 )]
+[node name="Block6" parent="Top/YSort/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 20 )
 
-[node name="Block7" parent="M/YSort2" instance=ExtResource( 4 )]
+[node name="Block7" parent="Top/YSort/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 44 )
 
-[node name="Block8" parent="M/YSort2" instance=ExtResource( 4 )]
+[node name="Block8" parent="Top/YSort/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 50 )
 
-[node name="Block9" parent="M/YSort2" instance=ExtResource( 4 )]
+[node name="Block9" parent="Top/YSort/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
-[node name="YSort3" type="YSort" parent="M"]
+[node name="YSort3" type="YSort" parent="Top/YSort"]
 position = Vector2( 34, 0 )
 
-[node name="Block" parent="M/YSort3" instance=ExtResource( 4 )]
+[node name="Block" parent="Top/YSort/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 8 )
 
-[node name="Block2" parent="M/YSort3" instance=ExtResource( 4 )]
+[node name="Block2" parent="Top/YSort/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 14 )
 
-[node name="Block3" parent="M/YSort3" instance=ExtResource( 4 )]
+[node name="Block3" parent="Top/YSort/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 38 )
 
-[node name="Block4" parent="M/YSort3" instance=ExtResource( 4 )]
+[node name="Block4" parent="Top/YSort/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 32 )
 
-[node name="Block5" parent="M/YSort3" instance=ExtResource( 4 )]
+[node name="Block5" parent="Top/YSort/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 26 )
 
-[node name="Block6" parent="M/YSort3" instance=ExtResource( 4 )]
+[node name="Block6" parent="Top/YSort/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 20 )
 
-[node name="Block7" parent="M/YSort3" instance=ExtResource( 4 )]
+[node name="Block7" parent="Top/YSort/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 44 )
 
-[node name="Block8" parent="M/YSort3" instance=ExtResource( 4 )]
+[node name="Block8" parent="Top/YSort/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 50 )
 
-[node name="Block9" parent="M/YSort3" instance=ExtResource( 4 )]
+[node name="Block9" parent="Top/YSort/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
-[node name="A" type="YSort" parent="."]
+[node name="YSort2" type="YSort" parent="Top"]
 position = Vector2( 49, 0 )
 
-[node name="YSort" type="YSort" parent="A"]
+[node name="YSort" type="YSort" parent="Top/YSort2"]
 
-[node name="Block" parent="A/YSort" instance=ExtResource( 4 )]
+[node name="Block" parent="Top/YSort2/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 8 )
 
-[node name="Block2" parent="A/YSort" instance=ExtResource( 4 )]
+[node name="Block2" parent="Top/YSort2/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 14 )
 
-[node name="Block3" parent="A/YSort" instance=ExtResource( 4 )]
+[node name="Block3" parent="Top/YSort2/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 38 )
 
-[node name="Block4" parent="A/YSort" instance=ExtResource( 4 )]
+[node name="Block4" parent="Top/YSort2/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 32 )
 
-[node name="Block5" parent="A/YSort" instance=ExtResource( 4 )]
+[node name="Block5" parent="Top/YSort2/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 26 )
 
-[node name="Block6" parent="A/YSort" instance=ExtResource( 4 )]
+[node name="Block6" parent="Top/YSort2/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 20 )
 
-[node name="Block7" parent="A/YSort" instance=ExtResource( 4 )]
+[node name="Block7" parent="Top/YSort2/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 44 )
 
-[node name="Block8" parent="A/YSort" instance=ExtResource( 4 )]
+[node name="Block8" parent="Top/YSort2/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 50 )
 
-[node name="Block9" parent="A/YSort" instance=ExtResource( 4 )]
+[node name="Block9" parent="Top/YSort2/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
-[node name="YSort2" type="YSort" parent="A"]
+[node name="YSort2" type="YSort" parent="Top/YSort2"]
 position = Vector2( 17, 0 )
 
-[node name="Block" parent="A/YSort2" instance=ExtResource( 4 )]
+[node name="Block" parent="Top/YSort2/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 8 )
 
-[node name="Block2" parent="A/YSort2" instance=ExtResource( 4 )]
+[node name="Block2" parent="Top/YSort2/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 14 )
 
-[node name="Block3" parent="A/YSort2" instance=ExtResource( 4 )]
+[node name="Block3" parent="Top/YSort2/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 38 )
 
-[node name="Block4" parent="A/YSort2" instance=ExtResource( 4 )]
+[node name="Block4" parent="Top/YSort2/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 32 )
 
-[node name="Block5" parent="A/YSort2" instance=ExtResource( 4 )]
+[node name="Block5" parent="Top/YSort2/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 26 )
 
-[node name="Block6" parent="A/YSort2" instance=ExtResource( 4 )]
+[node name="Block6" parent="Top/YSort2/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 20 )
 
-[node name="Block7" parent="A/YSort2" instance=ExtResource( 4 )]
+[node name="Block7" parent="Top/YSort2/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 44 )
 
-[node name="Block8" parent="A/YSort2" instance=ExtResource( 4 )]
+[node name="Block8" parent="Top/YSort2/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 50 )
 
-[node name="Block9" parent="A/YSort2" instance=ExtResource( 4 )]
+[node name="Block9" parent="Top/YSort2/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
-[node name="YSort3" type="YSort" parent="A"]
+[node name="YSort3" type="YSort" parent="Top/YSort2"]
 position = Vector2( 34, 0 )
 
-[node name="Block" parent="A/YSort3" instance=ExtResource( 4 )]
+[node name="Block" parent="Top/YSort2/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 8 )
 
-[node name="Block2" parent="A/YSort3" instance=ExtResource( 4 )]
+[node name="Block2" parent="Top/YSort2/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 14 )
 
-[node name="Block3" parent="A/YSort3" instance=ExtResource( 4 )]
+[node name="Block3" parent="Top/YSort2/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 38 )
 
-[node name="Block4" parent="A/YSort3" instance=ExtResource( 4 )]
+[node name="Block4" parent="Top/YSort2/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 32 )
 
-[node name="Block5" parent="A/YSort3" instance=ExtResource( 4 )]
+[node name="Block5" parent="Top/YSort2/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 26 )
 
-[node name="Block6" parent="A/YSort3" instance=ExtResource( 4 )]
+[node name="Block6" parent="Top/YSort2/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 20 )
 
-[node name="Block7" parent="A/YSort3" instance=ExtResource( 4 )]
+[node name="Block7" parent="Top/YSort2/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 44 )
 
-[node name="Block8" parent="A/YSort3" instance=ExtResource( 4 )]
+[node name="Block8" parent="Top/YSort2/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 50 )
 
-[node name="Block9" parent="A/YSort3" instance=ExtResource( 4 )]
+[node name="Block9" parent="Top/YSort2/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
-[node name="L" type="YSort" parent="."]
+[node name="YSort3" type="YSort" parent="Top"]
 position = Vector2( 101, 0 )
 
-[node name="YSort" type="YSort" parent="L"]
+[node name="YSort" type="YSort" parent="Top/YSort3"]
 
-[node name="Block" parent="L/YSort" instance=ExtResource( 4 )]
+[node name="Block" parent="Top/YSort3/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 8 )
 
-[node name="Block2" parent="L/YSort" instance=ExtResource( 4 )]
+[node name="Block2" parent="Top/YSort3/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 14 )
 
-[node name="Block3" parent="L/YSort" instance=ExtResource( 4 )]
+[node name="Block3" parent="Top/YSort3/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 38 )
 
-[node name="Block4" parent="L/YSort" instance=ExtResource( 4 )]
+[node name="Block4" parent="Top/YSort3/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 32 )
 
-[node name="Block5" parent="L/YSort" instance=ExtResource( 4 )]
+[node name="Block5" parent="Top/YSort3/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 26 )
 
-[node name="Block6" parent="L/YSort" instance=ExtResource( 4 )]
+[node name="Block6" parent="Top/YSort3/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 20 )
 
-[node name="Block7" parent="L/YSort" instance=ExtResource( 4 )]
+[node name="Block7" parent="Top/YSort3/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 44 )
 
-[node name="Block8" parent="L/YSort" instance=ExtResource( 4 )]
+[node name="Block8" parent="Top/YSort3/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 50 )
 
-[node name="Block9" parent="L/YSort" instance=ExtResource( 4 )]
+[node name="Block9" parent="Top/YSort3/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
-[node name="YSort2" type="YSort" parent="L"]
+[node name="YSort2" type="YSort" parent="Top/YSort3"]
 position = Vector2( 17, 0 )
 
-[node name="Block" parent="L/YSort2" instance=ExtResource( 4 )]
+[node name="Block" parent="Top/YSort3/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 8 )
 
-[node name="Block2" parent="L/YSort2" instance=ExtResource( 4 )]
+[node name="Block2" parent="Top/YSort3/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 14 )
 
-[node name="Block3" parent="L/YSort2" instance=ExtResource( 4 )]
+[node name="Block3" parent="Top/YSort3/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 38 )
 
-[node name="Block4" parent="L/YSort2" instance=ExtResource( 4 )]
+[node name="Block4" parent="Top/YSort3/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 32 )
 
-[node name="Block5" parent="L/YSort2" instance=ExtResource( 4 )]
+[node name="Block5" parent="Top/YSort3/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 26 )
 
-[node name="Block6" parent="L/YSort2" instance=ExtResource( 4 )]
+[node name="Block6" parent="Top/YSort3/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 20 )
 
-[node name="Block7" parent="L/YSort2" instance=ExtResource( 4 )]
+[node name="Block7" parent="Top/YSort3/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 44 )
 
-[node name="Block8" parent="L/YSort2" instance=ExtResource( 4 )]
+[node name="Block8" parent="Top/YSort3/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 50 )
 
-[node name="Block9" parent="L/YSort2" instance=ExtResource( 4 )]
+[node name="Block9" parent="Top/YSort3/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
-[node name="YSort3" type="YSort" parent="L"]
+[node name="YSort3" type="YSort" parent="Top/YSort3"]
 position = Vector2( 34, 0 )
 
-[node name="Block" parent="L/YSort3" instance=ExtResource( 4 )]
+[node name="Block" parent="Top/YSort3/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 8 )
 
-[node name="Block2" parent="L/YSort3" instance=ExtResource( 4 )]
+[node name="Block2" parent="Top/YSort3/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 14 )
 
-[node name="Block3" parent="L/YSort3" instance=ExtResource( 4 )]
+[node name="Block3" parent="Top/YSort3/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 38 )
 
-[node name="Block4" parent="L/YSort3" instance=ExtResource( 4 )]
+[node name="Block4" parent="Top/YSort3/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 32 )
 
-[node name="Block5" parent="L/YSort3" instance=ExtResource( 4 )]
+[node name="Block5" parent="Top/YSort3/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 26 )
 
-[node name="Block6" parent="L/YSort3" instance=ExtResource( 4 )]
+[node name="Block6" parent="Top/YSort3/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 20 )
 
-[node name="Block7" parent="L/YSort3" instance=ExtResource( 4 )]
+[node name="Block7" parent="Top/YSort3/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 44 )
 
-[node name="Block8" parent="L/YSort3" instance=ExtResource( 4 )]
+[node name="Block8" parent="Top/YSort3/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 50 )
 
-[node name="Block9" parent="L/YSort3" instance=ExtResource( 4 )]
+[node name="Block9" parent="Top/YSort3/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
-[node name="E" type="YSort" parent="."]
+[node name="YSort4" type="YSort" parent="Top"]
 position = Vector2( 153, 0 )
 
-[node name="YSort" type="YSort" parent="E"]
+[node name="YSort" type="YSort" parent="Top/YSort4"]
 
-[node name="Block" parent="E/YSort" instance=ExtResource( 4 )]
+[node name="Block" parent="Top/YSort4/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 8 )
 
-[node name="Block2" parent="E/YSort" instance=ExtResource( 4 )]
+[node name="Block2" parent="Top/YSort4/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 14 )
 
-[node name="Block3" parent="E/YSort" instance=ExtResource( 4 )]
+[node name="Block3" parent="Top/YSort4/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 38 )
 
-[node name="Block4" parent="E/YSort" instance=ExtResource( 4 )]
+[node name="Block4" parent="Top/YSort4/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 32 )
 
-[node name="Block5" parent="E/YSort" instance=ExtResource( 4 )]
+[node name="Block5" parent="Top/YSort4/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 26 )
 
-[node name="Block6" parent="E/YSort" instance=ExtResource( 4 )]
+[node name="Block6" parent="Top/YSort4/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 20 )
 
-[node name="Block7" parent="E/YSort" instance=ExtResource( 4 )]
+[node name="Block7" parent="Top/YSort4/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 44 )
 
-[node name="Block8" parent="E/YSort" instance=ExtResource( 4 )]
+[node name="Block8" parent="Top/YSort4/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 50 )
 
-[node name="Block9" parent="E/YSort" instance=ExtResource( 4 )]
+[node name="Block9" parent="Top/YSort4/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
-[node name="YSort2" type="YSort" parent="E"]
+[node name="YSort2" type="YSort" parent="Top/YSort4"]
 position = Vector2( 17, 0 )
 
-[node name="Block" parent="E/YSort2" instance=ExtResource( 4 )]
+[node name="Block" parent="Top/YSort4/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 8 )
 
-[node name="Block2" parent="E/YSort2" instance=ExtResource( 4 )]
+[node name="Block2" parent="Top/YSort4/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 14 )
 
-[node name="Block3" parent="E/YSort2" instance=ExtResource( 4 )]
+[node name="Block3" parent="Top/YSort4/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 38 )
 
-[node name="Block4" parent="E/YSort2" instance=ExtResource( 4 )]
+[node name="Block4" parent="Top/YSort4/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 32 )
 
-[node name="Block5" parent="E/YSort2" instance=ExtResource( 4 )]
+[node name="Block5" parent="Top/YSort4/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 26 )
 
-[node name="Block6" parent="E/YSort2" instance=ExtResource( 4 )]
+[node name="Block6" parent="Top/YSort4/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 20 )
 
-[node name="Block7" parent="E/YSort2" instance=ExtResource( 4 )]
+[node name="Block7" parent="Top/YSort4/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 44 )
 
-[node name="Block8" parent="E/YSort2" instance=ExtResource( 4 )]
+[node name="Block8" parent="Top/YSort4/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 50 )
 
-[node name="Block9" parent="E/YSort2" instance=ExtResource( 4 )]
+[node name="Block9" parent="Top/YSort4/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
-[node name="YSort3" type="YSort" parent="E"]
+[node name="YSort3" type="YSort" parent="Top/YSort4"]
 position = Vector2( 34, 0 )
 
-[node name="Block" parent="E/YSort3" instance=ExtResource( 4 )]
+[node name="Block" parent="Top/YSort4/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 8 )
 
-[node name="Block2" parent="E/YSort3" instance=ExtResource( 4 )]
+[node name="Block2" parent="Top/YSort4/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 14 )
 
-[node name="Block3" parent="E/YSort3" instance=ExtResource( 4 )]
+[node name="Block3" parent="Top/YSort4/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 38 )
 
-[node name="Block4" parent="E/YSort3" instance=ExtResource( 4 )]
+[node name="Block4" parent="Top/YSort4/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 32 )
 
-[node name="Block5" parent="E/YSort3" instance=ExtResource( 4 )]
+[node name="Block5" parent="Top/YSort4/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 26 )
 
-[node name="Block6" parent="E/YSort3" instance=ExtResource( 4 )]
+[node name="Block6" parent="Top/YSort4/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 20 )
 
-[node name="Block7" parent="E/YSort3" instance=ExtResource( 4 )]
+[node name="Block7" parent="Top/YSort4/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 44 )
 
-[node name="Block8" parent="E/YSort3" instance=ExtResource( 4 )]
+[node name="Block8" parent="Top/YSort4/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 50 )
 
-[node name="Block9" parent="E/YSort3" instance=ExtResource( 4 )]
+[node name="Block9" parent="Top/YSort4/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
-[node name="E2" type="YSort" parent="."]
+[node name="YSort5" type="YSort" parent="Top"]
 position = Vector2( 205, 0 )
 
-[node name="YSort" type="YSort" parent="E2"]
+[node name="YSort" type="YSort" parent="Top/YSort5"]
 
-[node name="Block" parent="E2/YSort" instance=ExtResource( 4 )]
+[node name="Block" parent="Top/YSort5/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 8 )
 
-[node name="Block2" parent="E2/YSort" instance=ExtResource( 4 )]
+[node name="Block2" parent="Top/YSort5/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 14 )
 
-[node name="Block3" parent="E2/YSort" instance=ExtResource( 4 )]
+[node name="Block3" parent="Top/YSort5/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 38 )
 
-[node name="Block4" parent="E2/YSort" instance=ExtResource( 4 )]
+[node name="Block4" parent="Top/YSort5/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 32 )
 
-[node name="Block5" parent="E2/YSort" instance=ExtResource( 4 )]
+[node name="Block5" parent="Top/YSort5/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 26 )
 
-[node name="Block6" parent="E2/YSort" instance=ExtResource( 4 )]
+[node name="Block6" parent="Top/YSort5/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 20 )
 
-[node name="Block7" parent="E2/YSort" instance=ExtResource( 4 )]
+[node name="Block7" parent="Top/YSort5/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 44 )
 
-[node name="Block8" parent="E2/YSort" instance=ExtResource( 4 )]
+[node name="Block8" parent="Top/YSort5/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 50 )
 
-[node name="Block9" parent="E2/YSort" instance=ExtResource( 4 )]
+[node name="Block9" parent="Top/YSort5/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
-[node name="YSort2" type="YSort" parent="E2"]
+[node name="YSort2" type="YSort" parent="Top/YSort5"]
 position = Vector2( 17, 0 )
 
-[node name="Block" parent="E2/YSort2" instance=ExtResource( 4 )]
+[node name="Block" parent="Top/YSort5/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 8 )
 
-[node name="Block2" parent="E2/YSort2" instance=ExtResource( 4 )]
+[node name="Block2" parent="Top/YSort5/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 14 )
 
-[node name="Block3" parent="E2/YSort2" instance=ExtResource( 4 )]
+[node name="Block3" parent="Top/YSort5/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 38 )
 
-[node name="Block4" parent="E2/YSort2" instance=ExtResource( 4 )]
+[node name="Block4" parent="Top/YSort5/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 32 )
 
-[node name="Block5" parent="E2/YSort2" instance=ExtResource( 4 )]
+[node name="Block5" parent="Top/YSort5/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 26 )
 
-[node name="Block6" parent="E2/YSort2" instance=ExtResource( 4 )]
+[node name="Block6" parent="Top/YSort5/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 20 )
 
-[node name="Block7" parent="E2/YSort2" instance=ExtResource( 4 )]
+[node name="Block7" parent="Top/YSort5/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 44 )
 
-[node name="Block8" parent="E2/YSort2" instance=ExtResource( 4 )]
+[node name="Block8" parent="Top/YSort5/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 50 )
 
-[node name="Block9" parent="E2/YSort2" instance=ExtResource( 4 )]
+[node name="Block9" parent="Top/YSort5/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
-[node name="YSort3" type="YSort" parent="E2"]
+[node name="YSort3" type="YSort" parent="Top/YSort5"]
 position = Vector2( 34, 0 )
 
-[node name="Block" parent="E2/YSort3" instance=ExtResource( 4 )]
+[node name="Block" parent="Top/YSort5/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 8 )
 
-[node name="Block2" parent="E2/YSort3" instance=ExtResource( 4 )]
+[node name="Block2" parent="Top/YSort5/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 14 )
 
-[node name="Block3" parent="E2/YSort3" instance=ExtResource( 4 )]
+[node name="Block3" parent="Top/YSort5/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 38 )
 
-[node name="Block4" parent="E2/YSort3" instance=ExtResource( 4 )]
+[node name="Block4" parent="Top/YSort5/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 32 )
 
-[node name="Block5" parent="E2/YSort3" instance=ExtResource( 4 )]
+[node name="Block5" parent="Top/YSort5/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 26 )
 
-[node name="Block6" parent="E2/YSort3" instance=ExtResource( 4 )]
+[node name="Block6" parent="Top/YSort5/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 20 )
 
-[node name="Block7" parent="E2/YSort3" instance=ExtResource( 4 )]
+[node name="Block7" parent="Top/YSort5/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 44 )
 
-[node name="Block8" parent="E2/YSort3" instance=ExtResource( 4 )]
+[node name="Block8" parent="Top/YSort5/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 50 )
 
-[node name="Block9" parent="E2/YSort3" instance=ExtResource( 4 )]
+[node name="Block9" parent="Top/YSort5/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
-[node name="A2" type="YSort" parent="."]
+[node name="YSort6" type="YSort" parent="Top"]
 position = Vector2( 257, 0 )
 
-[node name="YSort" type="YSort" parent="A2"]
+[node name="YSort" type="YSort" parent="Top/YSort6"]
 
-[node name="Block" parent="A2/YSort" instance=ExtResource( 4 )]
+[node name="Block" parent="Top/YSort6/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 8 )
 
-[node name="Block2" parent="A2/YSort" instance=ExtResource( 4 )]
+[node name="Block2" parent="Top/YSort6/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 14 )
 
-[node name="Block3" parent="A2/YSort" instance=ExtResource( 4 )]
+[node name="Block3" parent="Top/YSort6/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 38 )
 
-[node name="Block4" parent="A2/YSort" instance=ExtResource( 4 )]
+[node name="Block4" parent="Top/YSort6/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 32 )
 
-[node name="Block5" parent="A2/YSort" instance=ExtResource( 4 )]
+[node name="Block5" parent="Top/YSort6/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 26 )
 
-[node name="Block6" parent="A2/YSort" instance=ExtResource( 4 )]
+[node name="Block6" parent="Top/YSort6/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 20 )
 
-[node name="Block7" parent="A2/YSort" instance=ExtResource( 4 )]
+[node name="Block7" parent="Top/YSort6/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 44 )
 
-[node name="Block8" parent="A2/YSort" instance=ExtResource( 4 )]
+[node name="Block8" parent="Top/YSort6/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 50 )
 
-[node name="Block9" parent="A2/YSort" instance=ExtResource( 4 )]
+[node name="Block9" parent="Top/YSort6/YSort" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
-[node name="YSort2" type="YSort" parent="A2"]
+[node name="YSort2" type="YSort" parent="Top/YSort6"]
 position = Vector2( 17, 0 )
 
-[node name="Block" parent="A2/YSort2" instance=ExtResource( 4 )]
+[node name="Block" parent="Top/YSort6/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 8 )
 
-[node name="Block2" parent="A2/YSort2" instance=ExtResource( 4 )]
+[node name="Block2" parent="Top/YSort6/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 14 )
 
-[node name="Block3" parent="A2/YSort2" instance=ExtResource( 4 )]
+[node name="Block3" parent="Top/YSort6/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 38 )
 
-[node name="Block4" parent="A2/YSort2" instance=ExtResource( 4 )]
+[node name="Block4" parent="Top/YSort6/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 32 )
 
-[node name="Block5" parent="A2/YSort2" instance=ExtResource( 4 )]
+[node name="Block5" parent="Top/YSort6/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 26 )
 
-[node name="Block6" parent="A2/YSort2" instance=ExtResource( 4 )]
+[node name="Block6" parent="Top/YSort6/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 20 )
 
-[node name="Block7" parent="A2/YSort2" instance=ExtResource( 4 )]
+[node name="Block7" parent="Top/YSort6/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 44 )
 
-[node name="Block8" parent="A2/YSort2" instance=ExtResource( 4 )]
+[node name="Block8" parent="Top/YSort6/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 50 )
 
-[node name="Block9" parent="A2/YSort2" instance=ExtResource( 4 )]
+[node name="Block9" parent="Top/YSort6/YSort2" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
 
-[node name="YSort3" type="YSort" parent="A2"]
+[node name="YSort3" type="YSort" parent="Top/YSort6"]
 position = Vector2( 34, 0 )
 
-[node name="Block" parent="A2/YSort3" instance=ExtResource( 4 )]
+[node name="Block" parent="Top/YSort6/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 8 )
 
-[node name="Block2" parent="A2/YSort3" instance=ExtResource( 4 )]
+[node name="Block2" parent="Top/YSort6/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 14 )
 
-[node name="Block3" parent="A2/YSort3" instance=ExtResource( 4 )]
+[node name="Block3" parent="Top/YSort6/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 38 )
 
-[node name="Block4" parent="A2/YSort3" instance=ExtResource( 4 )]
+[node name="Block4" parent="Top/YSort6/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 32 )
 
-[node name="Block5" parent="A2/YSort3" instance=ExtResource( 4 )]
+[node name="Block5" parent="Top/YSort6/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 26 )
 
-[node name="Block6" parent="A2/YSort3" instance=ExtResource( 4 )]
+[node name="Block6" parent="Top/YSort6/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 20 )
 
-[node name="Block7" parent="A2/YSort3" instance=ExtResource( 4 )]
+[node name="Block7" parent="Top/YSort6/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 44 )
 
-[node name="Block8" parent="A2/YSort3" instance=ExtResource( 4 )]
+[node name="Block8" parent="Top/YSort6/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 50 )
 
-[node name="Block9" parent="A2/YSort3" instance=ExtResource( 4 )]
+[node name="Block9" parent="Top/YSort6/YSort3" instance=ExtResource( 4 )]
 position = Vector2( 16, 56 )
+
+[node name="Bottom" type="YSort" parent="."]
+
+[node name="YSort" type="YSort" parent="Bottom"]
+
+[node name="YSort" type="YSort" parent="Bottom/YSort"]
+
+[node name="LightBlock" parent="Bottom/YSort/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 63 )
+
+[node name="LightBlock2" parent="Bottom/YSort/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 69 )
+
+[node name="LightBlock3" parent="Bottom/YSort/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 75 )
+
+[node name="LightBlock4" parent="Bottom/YSort/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 81 )
+
+[node name="LightBlock5" parent="Bottom/YSort/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 87 )
+
+[node name="LightBlock6" parent="Bottom/YSort/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 93 )
+
+[node name="LightBlock7" parent="Bottom/YSort/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 99 )
+
+[node name="LightBlock8" parent="Bottom/YSort/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 105 )
+
+[node name="LightBlock9" parent="Bottom/YSort/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 111 )
+
+[node name="YSort2" type="YSort" parent="Bottom/YSort"]
+position = Vector2( 17, 0 )
+
+[node name="LightBlock" parent="Bottom/YSort/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 63 )
+
+[node name="LightBlock2" parent="Bottom/YSort/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 69 )
+
+[node name="LightBlock3" parent="Bottom/YSort/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 75 )
+
+[node name="LightBlock4" parent="Bottom/YSort/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 81 )
+
+[node name="LightBlock5" parent="Bottom/YSort/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 87 )
+
+[node name="LightBlock6" parent="Bottom/YSort/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 93 )
+
+[node name="LightBlock7" parent="Bottom/YSort/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 99 )
+
+[node name="LightBlock8" parent="Bottom/YSort/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 105 )
+
+[node name="LightBlock9" parent="Bottom/YSort/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 111 )
+
+[node name="YSort3" type="YSort" parent="Bottom/YSort"]
+position = Vector2( 34, 0 )
+
+[node name="LightBlock" parent="Bottom/YSort/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 63 )
+
+[node name="LightBlock2" parent="Bottom/YSort/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 69 )
+
+[node name="LightBlock3" parent="Bottom/YSort/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 75 )
+
+[node name="LightBlock4" parent="Bottom/YSort/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 81 )
+
+[node name="LightBlock5" parent="Bottom/YSort/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 87 )
+
+[node name="LightBlock6" parent="Bottom/YSort/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 93 )
+
+[node name="LightBlock7" parent="Bottom/YSort/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 99 )
+
+[node name="LightBlock8" parent="Bottom/YSort/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 105 )
+
+[node name="LightBlock9" parent="Bottom/YSort/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 111 )
+
+[node name="YSort2" type="YSort" parent="Bottom"]
+position = Vector2( 52, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="YSort" type="YSort" parent="Bottom/YSort2"]
+
+[node name="LightBlock" parent="Bottom/YSort2/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 63 )
+
+[node name="LightBlock2" parent="Bottom/YSort2/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 69 )
+
+[node name="LightBlock3" parent="Bottom/YSort2/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 75 )
+
+[node name="LightBlock4" parent="Bottom/YSort2/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 81 )
+
+[node name="LightBlock5" parent="Bottom/YSort2/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 87 )
+
+[node name="LightBlock6" parent="Bottom/YSort2/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 93 )
+
+[node name="LightBlock7" parent="Bottom/YSort2/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 99 )
+
+[node name="LightBlock8" parent="Bottom/YSort2/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 105 )
+
+[node name="LightBlock9" parent="Bottom/YSort2/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 111 )
+
+[node name="YSort2" type="YSort" parent="Bottom/YSort2"]
+position = Vector2( 17, 0 )
+
+[node name="LightBlock" parent="Bottom/YSort2/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 63 )
+
+[node name="LightBlock2" parent="Bottom/YSort2/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 69 )
+
+[node name="LightBlock3" parent="Bottom/YSort2/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 75 )
+
+[node name="LightBlock4" parent="Bottom/YSort2/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 81 )
+
+[node name="LightBlock5" parent="Bottom/YSort2/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 87 )
+
+[node name="LightBlock6" parent="Bottom/YSort2/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 93 )
+
+[node name="LightBlock7" parent="Bottom/YSort2/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 99 )
+
+[node name="LightBlock8" parent="Bottom/YSort2/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 105 )
+
+[node name="LightBlock9" parent="Bottom/YSort2/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 111 )
+
+[node name="YSort3" type="YSort" parent="Bottom/YSort2"]
+position = Vector2( 34, 0 )
+
+[node name="LightBlock" parent="Bottom/YSort2/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 63 )
+
+[node name="LightBlock2" parent="Bottom/YSort2/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 69 )
+
+[node name="LightBlock3" parent="Bottom/YSort2/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 75 )
+
+[node name="LightBlock4" parent="Bottom/YSort2/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 81 )
+
+[node name="LightBlock5" parent="Bottom/YSort2/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 87 )
+
+[node name="LightBlock6" parent="Bottom/YSort2/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 93 )
+
+[node name="LightBlock7" parent="Bottom/YSort2/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 99 )
+
+[node name="LightBlock8" parent="Bottom/YSort2/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 105 )
+
+[node name="LightBlock9" parent="Bottom/YSort2/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 111 )
+
+[node name="YSort3" type="YSort" parent="Bottom"]
+position = Vector2( 104, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="YSort" type="YSort" parent="Bottom/YSort3"]
+
+[node name="LightBlock" parent="Bottom/YSort3/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 63 )
+
+[node name="LightBlock2" parent="Bottom/YSort3/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 69 )
+
+[node name="LightBlock3" parent="Bottom/YSort3/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 75 )
+
+[node name="LightBlock4" parent="Bottom/YSort3/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 81 )
+
+[node name="LightBlock5" parent="Bottom/YSort3/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 87 )
+
+[node name="LightBlock6" parent="Bottom/YSort3/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 93 )
+
+[node name="LightBlock7" parent="Bottom/YSort3/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 99 )
+
+[node name="LightBlock8" parent="Bottom/YSort3/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 105 )
+
+[node name="LightBlock9" parent="Bottom/YSort3/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 111 )
+
+[node name="YSort2" type="YSort" parent="Bottom/YSort3"]
+position = Vector2( 17, 0 )
+
+[node name="LightBlock" parent="Bottom/YSort3/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 63 )
+
+[node name="LightBlock2" parent="Bottom/YSort3/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 69 )
+
+[node name="LightBlock3" parent="Bottom/YSort3/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 75 )
+
+[node name="LightBlock4" parent="Bottom/YSort3/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 81 )
+
+[node name="LightBlock5" parent="Bottom/YSort3/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 87 )
+
+[node name="LightBlock6" parent="Bottom/YSort3/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 93 )
+
+[node name="LightBlock7" parent="Bottom/YSort3/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 99 )
+
+[node name="LightBlock8" parent="Bottom/YSort3/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 105 )
+
+[node name="LightBlock9" parent="Bottom/YSort3/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 111 )
+
+[node name="YSort3" type="YSort" parent="Bottom/YSort3"]
+position = Vector2( 34, 0 )
+
+[node name="LightBlock" parent="Bottom/YSort3/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 63 )
+
+[node name="LightBlock2" parent="Bottom/YSort3/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 69 )
+
+[node name="LightBlock3" parent="Bottom/YSort3/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 75 )
+
+[node name="LightBlock4" parent="Bottom/YSort3/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 81 )
+
+[node name="LightBlock5" parent="Bottom/YSort3/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 87 )
+
+[node name="LightBlock6" parent="Bottom/YSort3/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 93 )
+
+[node name="LightBlock7" parent="Bottom/YSort3/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 99 )
+
+[node name="LightBlock8" parent="Bottom/YSort3/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 105 )
+
+[node name="LightBlock9" parent="Bottom/YSort3/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 111 )
+
+[node name="YSort4" type="YSort" parent="Bottom"]
+position = Vector2( 156, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="YSort" type="YSort" parent="Bottom/YSort4"]
+
+[node name="LightBlock" parent="Bottom/YSort4/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 63 )
+
+[node name="LightBlock2" parent="Bottom/YSort4/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 69 )
+
+[node name="LightBlock3" parent="Bottom/YSort4/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 75 )
+
+[node name="LightBlock4" parent="Bottom/YSort4/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 81 )
+
+[node name="LightBlock5" parent="Bottom/YSort4/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 87 )
+
+[node name="LightBlock6" parent="Bottom/YSort4/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 93 )
+
+[node name="LightBlock7" parent="Bottom/YSort4/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 99 )
+
+[node name="LightBlock8" parent="Bottom/YSort4/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 105 )
+
+[node name="LightBlock9" parent="Bottom/YSort4/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 111 )
+
+[node name="YSort2" type="YSort" parent="Bottom/YSort4"]
+position = Vector2( 17, 0 )
+
+[node name="LightBlock" parent="Bottom/YSort4/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 63 )
+
+[node name="LightBlock2" parent="Bottom/YSort4/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 69 )
+
+[node name="LightBlock3" parent="Bottom/YSort4/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 75 )
+
+[node name="LightBlock4" parent="Bottom/YSort4/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 81 )
+
+[node name="LightBlock5" parent="Bottom/YSort4/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 87 )
+
+[node name="LightBlock6" parent="Bottom/YSort4/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 93 )
+
+[node name="LightBlock7" parent="Bottom/YSort4/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 99 )
+
+[node name="LightBlock8" parent="Bottom/YSort4/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 105 )
+
+[node name="LightBlock9" parent="Bottom/YSort4/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 111 )
+
+[node name="YSort3" type="YSort" parent="Bottom/YSort4"]
+position = Vector2( 34, 0 )
+
+[node name="LightBlock" parent="Bottom/YSort4/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 63 )
+
+[node name="LightBlock2" parent="Bottom/YSort4/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 69 )
+
+[node name="LightBlock3" parent="Bottom/YSort4/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 75 )
+
+[node name="LightBlock4" parent="Bottom/YSort4/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 81 )
+
+[node name="LightBlock5" parent="Bottom/YSort4/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 87 )
+
+[node name="LightBlock6" parent="Bottom/YSort4/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 93 )
+
+[node name="LightBlock7" parent="Bottom/YSort4/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 99 )
+
+[node name="LightBlock8" parent="Bottom/YSort4/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 105 )
+
+[node name="LightBlock9" parent="Bottom/YSort4/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 111 )
+
+[node name="YSort5" type="YSort" parent="Bottom"]
+position = Vector2( 208, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="YSort" type="YSort" parent="Bottom/YSort5"]
+
+[node name="LightBlock" parent="Bottom/YSort5/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 63 )
+
+[node name="LightBlock2" parent="Bottom/YSort5/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 69 )
+
+[node name="LightBlock3" parent="Bottom/YSort5/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 75 )
+
+[node name="LightBlock4" parent="Bottom/YSort5/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 81 )
+
+[node name="LightBlock5" parent="Bottom/YSort5/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 87 )
+
+[node name="LightBlock6" parent="Bottom/YSort5/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 93 )
+
+[node name="LightBlock7" parent="Bottom/YSort5/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 99 )
+
+[node name="LightBlock8" parent="Bottom/YSort5/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 105 )
+
+[node name="LightBlock9" parent="Bottom/YSort5/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 111 )
+
+[node name="YSort2" type="YSort" parent="Bottom/YSort5"]
+position = Vector2( 17, 0 )
+
+[node name="LightBlock" parent="Bottom/YSort5/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 63 )
+
+[node name="LightBlock2" parent="Bottom/YSort5/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 69 )
+
+[node name="LightBlock3" parent="Bottom/YSort5/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 75 )
+
+[node name="LightBlock4" parent="Bottom/YSort5/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 81 )
+
+[node name="LightBlock5" parent="Bottom/YSort5/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 87 )
+
+[node name="LightBlock6" parent="Bottom/YSort5/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 93 )
+
+[node name="LightBlock7" parent="Bottom/YSort5/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 99 )
+
+[node name="LightBlock8" parent="Bottom/YSort5/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 105 )
+
+[node name="LightBlock9" parent="Bottom/YSort5/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 111 )
+
+[node name="YSort3" type="YSort" parent="Bottom/YSort5"]
+position = Vector2( 34, 0 )
+
+[node name="LightBlock" parent="Bottom/YSort5/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 63 )
+
+[node name="LightBlock2" parent="Bottom/YSort5/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 69 )
+
+[node name="LightBlock3" parent="Bottom/YSort5/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 75 )
+
+[node name="LightBlock4" parent="Bottom/YSort5/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 81 )
+
+[node name="LightBlock5" parent="Bottom/YSort5/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 87 )
+
+[node name="LightBlock6" parent="Bottom/YSort5/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 93 )
+
+[node name="LightBlock7" parent="Bottom/YSort5/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 99 )
+
+[node name="LightBlock8" parent="Bottom/YSort5/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 105 )
+
+[node name="LightBlock9" parent="Bottom/YSort5/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 111 )
+
+[node name="YSort6" type="YSort" parent="Bottom"]
+position = Vector2( 260, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="YSort" type="YSort" parent="Bottom/YSort6"]
+
+[node name="LightBlock" parent="Bottom/YSort6/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 63 )
+
+[node name="LightBlock2" parent="Bottom/YSort6/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 69 )
+
+[node name="LightBlock3" parent="Bottom/YSort6/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 75 )
+
+[node name="LightBlock4" parent="Bottom/YSort6/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 81 )
+
+[node name="LightBlock5" parent="Bottom/YSort6/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 87 )
+
+[node name="LightBlock6" parent="Bottom/YSort6/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 93 )
+
+[node name="LightBlock7" parent="Bottom/YSort6/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 99 )
+
+[node name="LightBlock8" parent="Bottom/YSort6/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 105 )
+
+[node name="LightBlock9" parent="Bottom/YSort6/YSort" instance=ExtResource( 5 )]
+position = Vector2( 13, 111 )
+
+[node name="YSort2" type="YSort" parent="Bottom/YSort6"]
+position = Vector2( 17, 0 )
+
+[node name="LightBlock" parent="Bottom/YSort6/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 63 )
+
+[node name="LightBlock2" parent="Bottom/YSort6/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 69 )
+
+[node name="LightBlock3" parent="Bottom/YSort6/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 75 )
+
+[node name="LightBlock4" parent="Bottom/YSort6/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 81 )
+
+[node name="LightBlock5" parent="Bottom/YSort6/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 87 )
+
+[node name="LightBlock6" parent="Bottom/YSort6/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 93 )
+
+[node name="LightBlock7" parent="Bottom/YSort6/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 99 )
+
+[node name="LightBlock8" parent="Bottom/YSort6/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 105 )
+
+[node name="LightBlock9" parent="Bottom/YSort6/YSort2" instance=ExtResource( 5 )]
+position = Vector2( 13, 111 )
+
+[node name="YSort3" type="YSort" parent="Bottom/YSort6"]
+position = Vector2( 34, 0 )
+
+[node name="LightBlock" parent="Bottom/YSort6/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 63 )
+
+[node name="LightBlock2" parent="Bottom/YSort6/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 69 )
+
+[node name="LightBlock3" parent="Bottom/YSort6/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 75 )
+
+[node name="LightBlock4" parent="Bottom/YSort6/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 81 )
+
+[node name="LightBlock5" parent="Bottom/YSort6/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 87 )
+
+[node name="LightBlock6" parent="Bottom/YSort6/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 93 )
+
+[node name="LightBlock7" parent="Bottom/YSort6/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 99 )
+
+[node name="LightBlock8" parent="Bottom/YSort6/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 105 )
+
+[node name="LightBlock9" parent="Bottom/YSort6/YSort3" instance=ExtResource( 5 )]
+position = Vector2( 13, 111 )
